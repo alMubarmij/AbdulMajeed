@@ -1,0 +1,533 @@
+/* 
+ * الألوان الرئيسية للموقع
+ * Primary: #2c3e50 (أزرق داكن)
+ * Secondary: #3498db (أزرق فاتح)
+ * Accent: #ffffff (أبيض)
+ * Background: #f5f5f5 (رمادي فاتح)
+ * Text: #333333 (أسود)
+ */
+
+/* إعدادات عامة */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #ffffff;
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --light-color: #ffffff;
+  --border-color: #dddddd;
+  --section-padding: 40px 0;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Tajawal', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body.arabic-resume {
+  font-family: 'Tajawal', 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* الأزرار */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: var(--light-color);
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* الرأس */
+header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-switch {
+  margin-left: 20px;
+}
+
+.language-switch .btn {
+  background-color: var(--accent-color);
+}
+
+.language-switch .btn:hover {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: var(--light-color);
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* صفحة البداية */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--light-color);
+}
+
+.language-selector {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.language-selector h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.language-selector h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.language-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.language-buttons .btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+/* القسم البطل */
+.hero {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 60px 0;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-image {
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--light-color);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-info p {
+  margin-right: 20px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+  color: var(--secondary-color);
+}
+
+/* الأقسام */
+.section {
+  padding: var(--section-padding);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.section-content {
+  background-color: var(--light-color);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* الخبرات */
+.experience-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.experience-item h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.experience-item h4 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.period {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.responsibilities {
+  padding-left: 20px;
+}
+
+.responsibilities li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.responsibilities li:before {
+  content: "•";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+/* التعليم */
+.education-item h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* الدورات التدريبية */
+.training-category {
+  margin-bottom: 25px;
+}
+
+.training-category:last-child {
+  margin-bottom: 0;
+}
+
+.training-category h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.training-category ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.training-category ul li:before {
+  content: "•";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+/* المهارات */
+.skills-category {
+  margin-bottom: 25px;
+}
+
+.skills-category:last-child {
+  margin-bottom: 0;
+}
+
+.skills-category h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* الشهادات واللغات */
+#certificates-list li, #languages-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+#certificates-list li:before, #languages-list li:before {
+  content: "•";
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+/* التذييل */
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-to-top {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  transform: translateY(-5px);
+}
+
+/* تصميم متجاوب */
+@media (max-width: 992px) {
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-info {
+    justify-content: center;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .language-switch {
+    margin: 0 0 10px 0;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.3rem;
+  }
+  
+  .experience-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  footer .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .language-buttons {
+    flex-direction: column;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section-content {
+    padding: 15px;
+  }
+}
+
+/* تخصيص للغة العربية */
+.arabic-resume {
+  direction: rtl;
+}
+
+.arabic-resume nav ul li {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.arabic-resume .language-switch {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.arabic-resume .contact-info i {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.arabic-resume .responsibilities {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.arabic-resume .responsibilities li {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+.arabic-resume .responsibilities li:before {
+  right: 0;
+  left: auto;
+}
+
+.arabic-resume .training-category ul li,
+.arabic-resume #certificates-list li,
+.arabic-resume #languages-list li {
+  padding-right: 20px;
+  padding-left: 0;
+}
+
+.arabic-resume .training-category ul li:before,
+.arabic-resume #certificates-list li:before,
+.arabic-resume #languages-list li:before {
+  right: 0;
+  left: auto;
+}
