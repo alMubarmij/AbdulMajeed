@@ -100,6 +100,11 @@ const arabicContent = {
     ],
     technical: [
       {
+        title: "إدخال البيانات ومعالجة النصوص (6 أشهر)",
+        provider: "معهد قطاف للتدريب",
+        year: "1442-1443هـ"
+      },
+      {
         title: "مايكروسوفت وورد",
         provider: "منصة دروب",
         year: "2019م"
@@ -173,7 +178,7 @@ const arabicContent = {
     },
     {
       name: "الإنجليزية",
-      level: " "
+      level: "68%"
     }
   ]
 };
@@ -278,6 +283,11 @@ const englishContent = {
     ],
     technical: [
       {
+        title: "Data Entry and Word Processing",
+        provider: "Qitaf Training Institute",
+        year: "1442-1443H"
+      },
+      {
         title: "Microsoft Word",
         provider: "Doroob Platform",
         year: "2019"
@@ -351,7 +361,7 @@ const englishContent = {
     },
     {
       name: "English",
-      level: " "
+      level: "68%"
     }
   ]
 };
