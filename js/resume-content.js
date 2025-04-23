@@ -4,7 +4,7 @@
 const arabicContent = {
   name: "عبد المجيد بن عبدالله حمد القفاري",
   contact: {
-    email: "-----@email.com",
+    email: "abdulmjeed.alqifary@gmail.com",
     phone: "0583378766",
     address: "المدينة المنورة"
   },
@@ -187,7 +187,7 @@ const arabicContent = {
 const englishContent = {
   name: "AbdulMajeed bin Abdullah Hamad Al-Qafari",
   contact: {
-    email: "----@emai.com",
+    email: "abdulmjeed.alqifary@gmail.com",
     phone: "0583378766",
     address: "Al-Madinah al-Munawwarah - Medina"
   },
