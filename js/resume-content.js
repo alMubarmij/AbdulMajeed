@@ -8,7 +8,7 @@ const arabicContent = {
     phone: "0583378766",
     address: "المدينة المنورة"
   },
-  summary: "مدير تنفيذي ذو خبرة في إدارة المنظمات غير الربحية والقطاع الخيري، مع أكثر من 5 سنوات في المناصب القيادية والإدارية. متخصص في التخطيط الاستراتيجي وإدارة العمليات وتطوير الأداء المؤسسي. خبرة متميزة في إدارة المخزون والخدمات العامة والصيانة وضمان الجودة. ملتزم بتطبيق أعلى معايير الحوكمة والشفافية وأخلاقيات العمل.",
+  summary: "مدير تنفيذي ذو خبرة في إدارة المنظمات غير الربحية والقطاع الخيري، مع أكثر من 10 سنوات في المناصب القيادية والإدارية. متخصص في التخطيط الاستراتيجي وإدارة العمليات وتطوير الأداء المؤسسي. خبرة متميزة في إدارة المخزون والخدمات العامة والصيانة وضمان الجودة. ملتزم بتطبيق أعلى معايير الحوكمة والشفافية وأخلاقيات العمل.",
   experience: [
     {
       title: "المدير التنفيذي",
@@ -191,7 +191,7 @@ const englishContent = {
     phone: "0583378766",
     address: "Al-Madinah al-Munawwarah - Medina"
   },
-  summary: "Experienced Executive Director in non-profit and charitable sector management with over 5 years in leadership and administrative positions. Specialized in strategic planning, operations management, and institutional performance development. Distinguished expertise in inventory management, general services, maintenance, and quality assurance. Committed to implementing the highest standards of governance, transparency, and work ethics.",
+  summary: "Experienced Executive Director in non-profit and charitable sector management with over 10 years in leadership and administrative positions. Specialized in strategic planning, operations management, and institutional performance development. Distinguished expertise in inventory management, general services, maintenance, and quality assurance. Committed to implementing the highest standards of governance, transparency, and work ethics.",
   experience: [
     {
       title: "Executive Director",
