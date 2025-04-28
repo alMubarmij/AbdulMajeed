@@ -66,6 +66,11 @@ const arabicContent = {
   training: {
     management: [
       {
+        title: "تنمية القيادة المضاعفة MLD (16 ساعة)",
+        provider: "شركة غراس",
+        year: "2025م"
+      },
+      {
         title: "إدارة الموارد البشرية (30 ساعة)",
         provider: "معهد تشكيل المستقبل",
         year: "2022م"
@@ -248,6 +253,11 @@ const englishContent = {
   },
   training: {
     management: [
+      {
+        title: "Multiplying Leadership Development (MLD) Program - (16 hours)",
+        provider: "Gheras Company",
+        year: "2025"
+      },
       {
         title: "Human Resources Management (30 hours)",
         provider: "Future Shaping Institute",
