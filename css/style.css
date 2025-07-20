@@ -306,6 +306,11 @@ nav ul li a:hover {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 5px;
+  }
+.education2-item h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;  
 }
 
 /* الدورات التدريبية */
