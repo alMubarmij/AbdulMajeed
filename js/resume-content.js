@@ -59,6 +59,11 @@ const arabicContent = {
     }
   ],
   education: {
+    degree: "الدبلوم العالي في إدارة المنظمات غير الربحية (٤.٦٢)",
+    institution: "جامعة الحدود الشمالية",
+    period: "2025م"
+  },
+    education2: {
     degree: "بكالوريوس في الكيمياء",
     institution: "كلية العلوم - جامعة طيبة",
     period: "2014م - 2018م"
@@ -66,10 +71,15 @@ const arabicContent = {
   training: {
     management: [
       {
+        title: "الإسناد الحكومي (20 ساعة)",
+        provider: "أكاديمية الفوزان",
+        year: "2025م"
+      },
+      {
         title: "تنمية القيادة المضاعفة MLD (16 ساعة)",
         provider: "شركة غراس",
         year: "2025م"
-      },
+      },            
       {
         title: "إدارة الموارد البشرية (30 ساعة)",
         provider: "معهد تشكيل المستقبل",
@@ -247,13 +257,23 @@ const englishContent = {
     }
   ],
   education: {
+    degree: "High Diploma in Nonprofit Organization Management (4.62)",
+    institution: "Northern Border University",
+    period: "2025"
+  },
+   education2: {
     degree: "Bachelor of Science in Chemistry",
     institution: "Faculty of Science - Taibah University",
     period: "2014 - 2018"
   },
   training: {
     management: [
-      {
+       {
+        title: "Governmental Outsourcing (20 Hours)",
+        provider: "Al Fozan Academy",
+        year: "2025"
+      },
+       {
         title: "Multiplying Leadership Development (MLD) Program - (16 hours)",
         provider: "Gheras Company",
         year: "2025"

@@ -51,6 +51,10 @@ function loadArabicContent() {
         document.getElementById('education-institution').textContent = arabicContent.education.institution;
         document.getElementById('education-period').textContent = arabicContent.education.period;
         
+        document.getElementById('education2-degree').textContent = arabicContent.education2.degree;
+        document.getElementById('education2-institution').textContent = arabicContent.education2.institution;
+        document.getElementById('education2-period').textContent = arabicContent.education2.period;
+        
         // الدورات التدريبية
         loadTrainingItems('management-training', arabicContent.training.management);
         loadTrainingItems('quality-training', arabicContent.training.quality);
@@ -132,6 +136,10 @@ function loadEnglishContent() {
         document.getElementById('education-institution-en').textContent = englishContent.education.institution;
         document.getElementById('education-period-en').textContent = englishContent.education.period;
         
+        document.getElementById('education2-degree-en').textContent = englishContent.education2.degree;
+        document.getElementById('education2-institution-en').textContent = englishContent.education2.institution;
+        document.getElementById('education2-period-en').textContent = englishContent.education2.period;   
+             
         // الدورات التدريبية
         loadTrainingItems('management-training-en', englishContent.training.management);
         loadTrainingItems('quality-training-en', englishContent.training.quality);
